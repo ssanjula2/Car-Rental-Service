@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent A Car - Registration</title>
+    <link rel="shortcut icon" type="x-icon" href="https://pic.onlinewebfonts.com/thumbnails/icons_348030.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+    <script defer src="Script.js"></script>
+</head>
+<body>
+     
+<div class="background1">   
+    <div class="container">
+        <div class="btn">
+            <div class="button-box">
+                <div id="btnbg"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                
+            </div>
+        <form id="login" class="input-grouplogin">
+            <input type="text" class="input-fieldlogin" placeholder="Enter Username or Email" required>
+            <input type="text" class="input-fieldlogin" placeholder="Enter Password" required><br><br>
+            <input type="checkbox" class="check-box"><span>Remember Password</span> 
+            <button type="submit" class="submit-btnlog">Login</button>
+        </form>
+        <form  id="register-form" class="input-groupreg" id="form" action="/">                        
+                <input class="input-field" id="username" name="username" type="text" placeholder="Enter Your Name" >
+                <div class="error"></div>
+
+            
+                <input class="input-field" type="email" type="email" placeholder="Enter a valid Email">
+                <div class="error"></div>
+        
+
+                <input class="input-field" id="age"name="age" type="number" min=18 max=100 placeholder="Enter Your Age"> 
+
+            
+                <input class="input-field" id="password"name="password" type="password" placeholder="Enter the Password" >
+                <div class="error"></div>
+
+
+                <input class="input-field" id="password2"name="password2" type="password" placeholder="Re-Enter the Password" >
+                <div class="error"></div>
+        
+                <br>
+                <input class="check" type="checkbox" value="check1" > I agree to the terms and conditions.</input>
+            
+                <button class="submit-btn" type="button" >Register</button>
+        </form>
+        </div> 
+    </div>
+</div>
+       <br>
+    </div>
+        <br>
+        <footer class="copyright">
+        <h2>&copy; Copyright 2024 | Group 03 - Assignment 02 | All Right Reserved</h2>
+        </footer>
+
+        <script>
+                var x=document.getElementById("login");
+                var y=document.getElementById("register-form");
+                var z=document.getElementById("btnbg");
+
+
+                function register(){
+                    x.style.left="-400px";
+                    y.style.left="50px";
+                    z.style.left="115px";
+                }
+
+                function login(){
+                    x.style.left="50px";
+                    y.style.left="450px";
+                    z.style.left="0";
+                }
+
+        </script>
+</body>
+</html>
